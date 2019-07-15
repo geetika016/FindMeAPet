@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StaffMainWindow</class>
+ <widget class="QMainWindow" name="StaffMainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1281</width>
+    <height>592</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>cuACS</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>6</number>
+    </property>
+    <property name="leftMargin">
+     <number>4</number>
+    </property>
+    <property name="topMargin">
+     <number>4</number>
+    </property>
+    <property name="rightMargin">
+     <number>4</number>
+    </property>
+    <property name="bottomMargin">
+     <number>4</number>
+    </property>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="currentIndex">
+       <number>-1</number>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1281</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAnimal">
+    <property name="title">
+     <string>Animal</string>
+    </property>
+    <addaction name="actionView_Animals"/>
+    <addaction name="actionAdd_Animals"/>
+   </widget>
+   <widget class="QMenu" name="menuACM">
+    <property name="title">
+     <string>ACM</string>
+    </property>
+    <addaction name="actionLaunch"/>
+    <addaction name="actionMatch_Results"/>
+   </widget>
+   <widget class="QMenu" name="menuClient">
+    <property name="title">
+     <string>Client</string>
+    </property>
+    <addaction name="actionView_Clients"/>
+    <addaction name="actionAdd_Clients"/>
+   </widget>
+   <addaction name="menuClient"/>
+   <addaction name="menuAnimal"/>
+   <addaction name="menuACM"/>
+  </widget>
+  <action name="actionView_Clients">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>View Clients</string>
+   </property>
+  </action>
+  <action name="actionAdd_Clients">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Add Clients</string>
+   </property>
+  </action>
+  <action name="actionView_Animals">
+   <property name="text">
+    <string>View/Edit Animals</string>
+   </property>
+  </action>
+  <action name="actionAdd_Animals">
+   <property name="text">
+    <string>Add Animals</string>
+   </property>
+  </action>
+  <action name="actionLaunch">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Launch</string>
+   </property>
+  </action>
+  <action name="actionLogin">
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </action>
+  <action name="actionMatch_Results">
+   <property name="text">
+    <string>Match Results</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
